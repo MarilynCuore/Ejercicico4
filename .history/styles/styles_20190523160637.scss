@@ -1,0 +1,172 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap");
+/*Variables*/
+$font: "Inconsolata", monospace;
+$pink: #fb3e44;
+$lighter-grey: rgba(0, 0, 0, 0.05);
+
+/* all Inputs */
+::-webkit-input-placeholder {
+  color: #555;
+  font-family: $font;
+  padding-left: 0.5rem;
+}
+::-moz-placeholder {
+  color: #555;
+  font-family: $font;
+  padding-left: 0.5rem;
+} /* firefox 19+ */
+:-ms-input-placeholder {
+  color: #555;
+  font-family: $font;
+  padding-left: 0.5rem;
+} /* ie */
+input:-moz-placeholder {
+  color: #555;
+  font-family: $font;
+  padding-left: 0.5rem;
+}
+
+body {
+  overflow: hidden;
+}
+header {
+  .gradient {
+    width: 100vw;
+    height: 5px;
+    background: rgba(255, 134, 41, 1);
+    background: -moz-linear-gradient(
+      left,
+      rgba(255, 134, 41, 1) 0%,
+      rgba(255, 98, 26, 1) 20%,
+      rgba(224, 59, 26, 1) 37%,
+      rgba(214, 52, 29, 1) 46%,
+      rgba(196, 41, 33, 1) 61%,
+      rgba(201, 44, 122, 1) 79%,
+      rgba(216, 54, 252, 1) 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      right top,
+      color-stop(0%, rgba(255, 134, 41, 1)),
+      color-stop(20%, rgba(255, 98, 26, 1)),
+      color-stop(37%, rgba(224, 59, 26, 1)),
+      color-stop(46%, rgba(214, 52, 29, 1)),
+      color-stop(61%, rgba(196, 41, 33, 1)),
+      color-stop(79%, rgba(201, 44, 122, 1)),
+      color-stop(100%, rgba(216, 54, 252, 1))
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(255, 134, 41, 1) 0%,
+      rgba(255, 98, 26, 1) 20%,
+      rgba(224, 59, 26, 1) 37%,
+      rgba(214, 52, 29, 1) 46%,
+      rgba(196, 41, 33, 1) 61%,
+      rgba(201, 44, 122, 1) 79%,
+      rgba(216, 54, 252, 1) 100%
+    );
+    background: -o-linear-gradient(
+      left,
+      rgba(255, 134, 41, 1) 0%,
+      rgba(255, 98, 26, 1) 20%,
+      rgba(224, 59, 26, 1) 37%,
+      rgba(214, 52, 29, 1) 46%,
+      rgba(196, 41, 33, 1) 61%,
+      rgba(201, 44, 122, 1) 79%,
+      rgba(216, 54, 252, 1) 100%
+    );
+    background: -ms-linear-gradient(
+      left,
+      rgba(255, 134, 41, 1) 0%,
+      rgba(255, 98, 26, 1) 20%,
+      rgba(224, 59, 26, 1) 37%,
+      rgba(214, 52, 29, 1) 46%,
+      rgba(196, 41, 33, 1) 61%,
+      rgba(201, 44, 122, 1) 79%,
+      rgba(216, 54, 252, 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 134, 41, 1) 0%,
+      rgba(255, 98, 26, 1) 20%,
+      rgba(224, 59, 26, 1) 37%,
+      rgba(214, 52, 29, 1) 46%,
+      rgba(196, 41, 33, 1) 61%,
+      rgba(201, 44, 122, 1) 79%,
+      rgba(216, 54, 252, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8629', endColorstr='#d836fc', GradientType=1 );
+  }
+}
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .principal-nav {
+    display: flex;
+    width: 100%;
+    padding-left: 0.5rem;
+    justify-content: space-between;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    border-bottom: solid 0.2px #e0e0e0;
+    ul {
+      display: flex;
+      &:first-child {
+        display: none;
+      }
+      li {
+        flex-grow: 1;
+        padding-right: 0.5rem;
+        display: block;
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: $font;
+          font-weight: 500;
+          text-decoration: none;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+  .second-nav {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+      flex-grow: 1;
+      padding-bottom: .5rem;
+      img {
+        padding-left: 0.5rem;
+        padding-top: 0.5rem;
+        width: 80px;
+      }
+    }
+    .search {
+      border-top: solid 0.2px #e0e0e0;
+      padding-left: 0.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      flex: 1 1 auto;
+      input {
+        background-color: $lighter-grey;
+        border: none;
+        width: calc(100% - 20%);
+        height: 40px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: $pink;
+        border: none;
+        color: white;
+        height: 40px;
+        box-sizing: border-box;
+        font-family: $font;
+        font-size: 0.875rem;
+        padding-bottom: 0px;
+      }
+    }
+  }
+}

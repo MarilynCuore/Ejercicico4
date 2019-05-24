@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700&display=swap');
+header{
+    div{
+        background-color: rgba(255,134,41,1);
+        background: @include filter-gradient(#ff8629, #c92c7a, horizontal);
+        background: @include background-image(linear-gradient(left, rgba(255,134,41,1) 0%, rgba(255,98,26,1) 20%, rgba(224,59,26,1) 37%, rgba(214,52,29,1) 46%, rgba(196,41,33,1) 61%, rgba(201,44,122,1) 79%, rgba(216,54,252,1) 100%)); 
+    }
+}

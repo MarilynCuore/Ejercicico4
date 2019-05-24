@@ -1,0 +1,341 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+/*Variables*/
+/* all Inputs */
+::-webkit-input-placeholder {
+  color: #555;
+  font-family: "Inconsolata", monospace;
+  padding-left: 0.5rem;
+}
+
+::-moz-placeholder {
+  color: #555;
+  font-family: "Inconsolata", monospace;
+  padding-left: 0.5rem;
+}
+
+/* firefox 19+ */
+:-ms-input-placeholder {
+  color: #555;
+  font-family: "Inconsolata", monospace;
+  padding-left: 0.5rem;
+}
+
+/* ie */
+input:-moz-placeholder {
+  color: #555;
+  font-family: "Inconsolata", monospace;
+  padding-left: 0.5rem;
+}
+
+header {
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+          box-shadow: 0 4px 13px -3px rgba(0, 0, 0, 0.10196);
+}
+
+header .gradient {
+  width: 100vw;
+  height: 5px;
+  background: #ff8629;
+  background: -webkit-gradient(left top, right top, color-stop(0%, #ff8629), color-stop(20%, #ff621a), color-stop(37%, #e03b1a), color-stop(46%, #d6341d), color-stop(61%, #c42921), color-stop(79%, #c92c7a), color-stop(100%, #d836fc));
+  background: -webkit-gradient(linear, left top, right top, from(#ff8629), color-stop(20%, #ff621a), color-stop(37%, #e03b1a), color-stop(46%, #d6341d), color-stop(61%, #c42921), color-stop(79%, #c92c7a), to(#d836fc));
+  background: linear-gradient(to right, #ff8629 0%, #ff621a 20%, #e03b1a 37%, #d6341d 46%, #c42921 61%, #c92c7a 79%, #d836fc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8629', endColorstr='#d836fc', GradientType=1 );
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+}
+
+.main-nav .principal-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-left: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: solid 0.2px #e0e0e0;
+}
+
+.main-nav .principal-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-nav .principal-nav ul:first-child {
+  display: none;
+}
+
+.main-nav .principal-nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 0.5rem;
+  display: block;
+}
+
+.main-nav .principal-nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.main-nav .second-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-nav .second-nav .logo {
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+.main-nav .second-nav .logo a img {
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  width: 80px;
+}
+
+.main-nav .second-nav .login {
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: right;
+  padding-top: 0.7rem;
+}
+
+.main-nav .second-nav .login a {
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.main-nav .second-nav .login a:nth-of-type(1) {
+  border: 1px solid #9a9a9a;
+  padding: 5px;
+}
+
+.main-nav .second-nav .login a:nth-of-type(2) {
+  padding-right: 0.5rem;
+}
+
+.main-nav .second-nav .search {
+  border-top: solid 0.2px #e0e0e0;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.main-nav .second-nav .search input {
+  background-color: rgba(0, 0, 0, 0.05);
+  border: none;
+  width: calc(100% - 25%);
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-nav .second-nav .search button {
+  width: 23%;
+  background-color: #fb3e44;
+  border: none;
+  color: white;
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inconsolata", monospace;
+  font-size: 0.875rem;
+  padding-bottom: 0px;
+}
+
+.principal-section {
+  background-color: rgba(232, 217, 217, 0.3);
+  height: calc(100vh - 120px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.principal-section .content-principal-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  max-width: 95%;
+}
+
+.principal-section .content-principal-section h1 {
+  font-size: 2.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.principal-section .content-principal-section span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.principal-section .action-principal-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.principal-section .action-principal-section a {
+  padding: 20px;
+  min-width: 250px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.principal-section .action-principal-section a:nth-of-type(1) {
+  background-color: #fb3e44;
+  -webkit-box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+          box-shadow: 8px 8px 0 rgba(251, 59, 73, 0.2);
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.principal-section .action-principal-section a:nth-of-type(2) {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.second-section {
+  height: 100vh;
+}
+
+.second-section .bg-image {
+  height: 50vh;
+  background-image: url("https://static.npmjs.com/attachments/cjsdu27d721czsp74i05n4iey-best-open.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}
+
+.second-section .text-conten-second-section {
+  max-width: 95%;
+  height: 50vh;
+  text-align: center;
+}
+
+.second-section .text-conten-second-section h2 {
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(255, 204, 53, 0.4);
+          text-decoration-color: rgba(255, 204, 53, 0.4);
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  font-size: 2.25rem;
+  padding-bottom: 2rem;
+}
+
+.second-section .text-conten-second-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Inconsolata", monospace;
+}
+
+.third-section {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.third-section article img {
+  width: 32px;
+}
+
+.third-section article h3 {
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #fb3e44;
+  margin-bottom: 700;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.third-section article p {
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 4rem;
+}
+
+.third-section .actions {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third-section .actions a {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: white;
+  background: black;
+  min-width: 250px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  -webkit-box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+          box-shadow: 8px 8px 0 rgba(128, 83, 35, 0.2);
+}
+/*# sourceMappingURL=styles.css.map */
